@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Poshak - Premium Linen Wear</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&family=Inter:wght@600&family=Roboto+Serif:wght@500&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f7f6f3;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #e6e4e1, #f9f8f7);
+      color: #222;
+      padding: 2rem;
+      text-align: center;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    header h1 {
+      font-family: 'Roboto Serif', serif;
+      font-size: 3rem;
+      margin: 0;
+      color: #1a1a1a;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #4a4a4a;
+      margin-top: 0.5rem;
+      animation: fadeInText 2s ease-in-out;
+    }
+
+    @keyframes fadeInText {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    nav {
+      background-color: #dedcdc;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: #444;
+      text-decoration: none;
+      margin: 0 1.5rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #888;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .intro h2, .products h2, .services h2, .contact h2 {
+      font-family: 'Inter', sans-serif;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #1f1f1f;
+      text-align: center;
+    }
+
+    .products {
+      background-color: #f2f0ed;
+    }
+
+    .services {
+      background-color: #f3f3f3;
+    }
+
+    .intro {
+      background-color: #f9f7f5;
+    }
+
+    .contact {
+      background-color: #f0efee;
+    }
+
+    .products, .services, .intro, .contact {
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      animation: fadeInUp 1s ease-out;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .products:hover, .services:hover, .contact:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .intro p {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 1.1rem;
+      color: #4d4d4d;
+      text-align: center;
+      line-height: 1.6;
+      margin-top: 1rem;
+    }
+
+    .services p, .contact p {
+      font-size: 1rem;
+      color: #4d4d4d;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #e0dedb;
+      color: #333;
+    }
+
+    .product-list, .service-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .card {
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      margin: 0.5rem 0;
+      color: #2d2d2d;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: #5c5c5c;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Poshak</h1>
+    <p>Crafting Premium Linen Wear</p>
+  </header>
+
+  <nav>
+    <a href="#intro">About</a>
+    <a href="#products">Products</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="intro" class="intro">
+    <h2>About Us</h2>
+    <p>At Poshak, we create premium linen clothing that blends luxurious comfort with timeless style.</p>
+  </section>
+
+  <section id="products" class="products">
+    <h2>Our Products</h2>
+    <div class="product-list">
+      <div class="card">
+        <h3>Linen Shirts</h3>
+        <p>Lightweight, breathable and stylish for all seasons.</p>
+      </div>
+      <div class="card">
+        <h3>Linen Kurtas</h3>
+        <p>Elegant ethnic wear with a modern twist.</p>
+      </div>
+      <div class="card">
+        <h3>Linen Dresses</h3>
+        <p>Graceful silhouettes in soft, premium linen.</p>
+      </div>
+      <div class="card">
+        <h3>Linen Trousers</h3>
+        <p>Perfect blend of comfort and sophistication.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+      <div class="card">
+        <h3>Custom Orders</h3>
+        <p>Tailored linen apparel designed to your specifications.</p>
+      </div>
+      <div class="card">
+        <h3>Bulk Manufacturing</h3>
+        <p>Reliable and scalable production for brands and retailers.</p>
+      </div>
+      <div class="card">
+        <h3>Design Consultation</h3>
+        <p>Collaborate with our experts to bring your ideas to life.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Email:</strong> jhasujit@yahoo.in</p>
+    <p><strong>Phone:</strong> +91 6355732885</p>
+    <p><strong>Address:</strong> 1st floor Panorama Public School Chatapur, Bihar</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Poshak. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
