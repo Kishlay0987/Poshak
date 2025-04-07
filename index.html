@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Poshak - Premium Linen Wear</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&family=Inter:wght@600&family=Roboto+Serif:wght@500&family=Quicksand:wght@500&display=swap" rel="stylesheet">
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: 'Open Sans', sans-serif;
@@ -16,7 +20,7 @@
     header {
       background: linear-gradient(135deg, #e6e4e1, #f9f8f7);
       color: #222;
-      padding: 2rem;
+      padding: 2rem 1rem;
       text-align: center;
       animation: fadeInDown 1s ease-out;
     }
@@ -28,13 +32,13 @@
 
     header h1 {
       font-family: 'Roboto Serif', serif;
-      font-size: 3rem;
+      font-size: 2.5rem;
       margin: 0;
       color: #1a1a1a;
     }
 
     header p {
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: #4a4a4a;
       margin-top: 0.5rem;
       animation: fadeInText 2s ease-in-out;
@@ -48,6 +52,7 @@
     nav {
       background-color: #dedcdc;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       padding: 1rem;
     }
@@ -55,7 +60,7 @@
     nav a {
       color: #444;
       text-decoration: none;
-      margin: 0 1.5rem;
+      margin: 0.5rem 1rem;
       font-weight: bold;
       transition: color 0.3s;
     }
@@ -65,36 +70,21 @@
     }
 
     section {
-      padding: 4rem 2rem;
+      padding: 3rem 1rem;
       max-width: 1000px;
       margin: auto;
     }
 
     .intro h2, .products h2, .services h2, .contact h2 {
       font-family: 'Inter', sans-serif;
-      font-size: 2rem;
+      font-size: 1.8rem;
       margin-bottom: 1rem;
       color: #1f1f1f;
       text-align: center;
     }
 
-    .products {
-      background-color: #f2f0ed;
-    }
-
-    .services {
-      background-color: #f3f3f3;
-    }
-
-    .intro {
-      background-color: #f9f7f5;
-    }
-
-    .contact {
-      background-color: #f0efee;
-    }
-
     .products, .services, .intro, .contact {
+      background-color: #fff;
       border-radius: 12px;
       padding: 2rem;
       margin-bottom: 2rem;
@@ -113,9 +103,25 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
+    .intro {
+      background-color: #f9f7f5;
+    }
+
+    .products {
+      background-color: #f2f0ed;
+    }
+
+    .services {
+      background-color: #f3f3f3;
+    }
+
+    .contact {
+      background-color: #f0efee;
+    }
+
     .intro p {
       font-family: 'Quicksand', sans-serif;
-      font-size: 1.1rem;
+      font-size: 1rem;
       color: #4d4d4d;
       text-align: center;
       line-height: 1.6;
@@ -129,14 +135,14 @@
 
     footer {
       text-align: center;
-      padding: 2rem;
+      padding: 2rem 1rem;
       background-color: #e0dedb;
       color: #333;
     }
 
     .product-list, .service-list {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 1.5rem;
       margin-top: 1rem;
     }
@@ -163,6 +169,28 @@
     .card p {
       font-size: 0.9rem;
       color: #5c5c5c;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav a {
+        margin: 0.5rem 0;
+      }
+
+      .intro p,
+      .services p,
+      .contact p {
+        font-size: 0.95rem;
+      }
     }
   </style>
 </head>
